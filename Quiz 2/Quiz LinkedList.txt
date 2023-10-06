@@ -1,0 +1,113 @@
+//Consider the following code of Singly LinkedList
+
+class Link
+   {
+   public int iData;              
+   public double dData; // data item
+   public Link next;              
+   public Link(int id, double dd) 
+      {
+      iData = id;
+      dData = dd;
+      }
+   public void displayLink()      
+      {
+      System.out.print("{" + iData + ", " + dData + "} ");
+      }
+   }  // end class Link
+////////////////////////////////////////////////////////////////
+
+class LinkList
+   {
+   private Link first;            // ref to first link on list
+
+// -------------------------------------------------------------
+   public LinkList()              // constructor
+      {
+      first = null;               // no links on list yet
+      }
+// -------------------------------------------------------------
+   public void insertFirst(int id, double dd)
+      {                           
+
+      
+      }
+
+// -------------------------------------------------------------
+   public int displayidValueintheLastNode()
+      {                           
+
+      
+      }
+
+// -------------------------------------------------------------
+   public int displayidValueinthemiddleNode()
+      {                           
+
+      
+      }
+
+// -------------------------------------------------------------
+	  
+public int count() //returns the number of nodes in a linkedlist     
+      {
+      
+                   
+      }
+
+// -------------------------------------------------------------
+   public Link search(int key)     
+      {
+      
+                   
+      }
+// -------------------------------------------------------------
+   public Link delete(int key)    // delete link with given key
+      {                           // (assumes non-empty list)
+
+
+
+
+      }
+// -------------------------------------------------------------
+   public int displayList()      // display the list
+      {
+      
+      
+      
+      }
+// -------------------------------------------------------------
+public int Duplicates()      // returns 1 or 0, if duplicates exist
+      {
+      
+      
+      
+      }
+// -------------------------------------------------------------
+   public void deleteDuplicateNodes()      // display the list
+      {
+      
+      
+      
+      }
+// -------------------------------------------------------------
+
+
+   }  // end class LinkList
+////////////////////////////////////////////////////////////////
+class LinkList2App
+   {
+   public static void main(String[] args)
+      {
+      LinkList theList = new LinkList();  // make list
+
+      theList.insertFirst(22, 2.99);      // insert 4 items
+      theList.insertFirst(44, 4.99);
+      theList.insertFirst(66, 6.99);
+      theList.insertFirst(88, 8.99);
+
+      theList.displayList();              // display list
+      //you can call and test your methods.
+     
+   }  // end class LinkList2App
+////////////////////////////////////////////////////////////////

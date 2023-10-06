@@ -1,0 +1,77 @@
+public class Recitation_8_Test {
+    public static void main(String[] args) {
+        System.out.println("This program tests generic SLinkedList and DLinkedList.");
+        System.out.println("Testing SLinkedList:");
+        System.out.println("Adding names (strings): Alice, Bob, Charlie, and David.");
+        SLinkedList<String> theSList = new SLinkedList<String>();
+        theSList.addFirst("Alice");
+        theSList.display();
+        theSList.addFirst("Bob");
+        theSList.display();
+        theSList.addFirst("Charlie");
+        theSList.display();
+        theSList.addFirst("David");
+        theSList.display();
+        System.out.println("Checking size:");
+        System.out.println(theSList.size());
+        System.out.println("Removing first: ");
+        theSList.removeFirst();
+        theSList.display();
+        System.out.println("Checking size: ");
+        System.out.println(theSList.size());
+        System.out.println("Adding Another name: (Arseniy)");
+        theSList.addFirst("Arseniy");
+        theSList.display();
+        System.out.println("Checking new size (expected to increase by 1): ");
+        System.out.println(theSList.size());
+        System.out.println("Removing Arseniy: ");
+        theSList.remove("Arseniy");
+        theSList.display();
+        System.out.println("Checking new size (expected to decrease by 1): ");
+        System.out.println(theSList.size());
+        System.out.println("Printing out the entire list: ");
+        theSList.display();
+        System.out.println("Updating: Alice to Kate");
+        theSList.update("Alice", "Kate");
+        theSList.display();
+        System.out.println("________________END OF TESTING FOR SLinkedList_______________________");
+
+        System.out.println("Testing DLinkedList:");
+        System.out.println("Adding names (strings): XXX, YYY, ZZZ, KKK, MMM.");
+        SLinkedList<String> theDList = new SLinkedList<String>();
+        theDList.addFirst("XXX");
+        theDList.display();
+        theDList.addFirst("YYY");
+        theDList.display();
+        theDList.addFirst("ZZZ");
+        theDList.display();
+        theDList.addFirst("KKK");
+        theDList.display();
+        theDList.addFirst("MMM");
+        theDList.display();
+        System.out.println("Checking size:");
+        System.out.println(theDList.size());
+        System.out.println("Removing first: ");
+        theDList.removeFirst();
+        theDList.display();
+        System.out.println("Checking size: ");
+        System.out.println(theDList.size());
+        System.out.println("Adding Another name: OOO");
+        theDList.addFirst("OOO");
+        theDList.display();
+        System.out.println("Checking new size (expected to increase by 1): ");
+        System.out.println(theDList.size());
+        System.out.println("Removing OOO: ");
+        theDList.remove("OOO");
+        theDList.display();
+        System.out.println("Checking new size (expected to decrease by 1): ");
+        System.out.println(theDList.size());
+        System.out.println("Printing out the entire list: ");
+        theDList.display();
+        System.out.println("Updating: ZZZ to BBB");
+        theDList.update("ZZZ", "BBB");
+        theDList.display();
+
+        System.out.println("________________END OF TESTING FOR DLinkedList_______________________");
+    }
+}
